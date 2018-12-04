@@ -1,0 +1,30 @@
+
+<! DOCTYPE html>
+<html lang="en">
+<body>
+<div id="A"></div>
+<span id="B"></span>
+<div id="C"></div>
+<div id="D"></div>
+<div id="E"></div>
+    <script>
+        document.getElementById('A').innerHTML='<strong>hiii</strong>';
+        document.getElementById('B').outerHTML='<div id = "B" class="new"> whats shaking</div>';
+
+        ///non standred extensions below i.e innertext outertext
+        document.getElementById('C').innerText="keep it...!";
+        document.getElementById('D').outerText="real...!!!";
+
+        /*
+            log:
+            <div id="A"><strong>hiii</strong></div>
+            <div id="B" class="new"> whats shaking</div>
+            <div id="C">keep it...!</div>
+            real...!!!
+            <div id="E"></div>
+        */
+
+        console.log(document.body.innerHTML);
+    </script>
+</body>
+</html>
